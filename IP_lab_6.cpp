@@ -180,10 +180,22 @@ int fahrenheit(float celsius)
 }
 
 
+// tabuler format function - the chart
+int  chart(float a, float b)
+{
+    
+    for (a = 0; a <= 100; a++)
+    {
+        b = (a * 9/5.0) + 32;
+        cout << "\n" << a << " = " << b << "\n" ;
+        
+    }
+}
+
 // main function
 int main()
 {
-    float cel, fah, f = 0, c = 0 ;
+    float cel, fah, f , c ;
     
     cout << "Enter fahrenheit for convert to celsius : ";
     cin >> fah;
@@ -193,10 +205,13 @@ int main()
     
     c = celsius(fah);
     f = fahrenheit(cel);
-    
+//     print of celsius function
     cout << fah << " F = " << c << " C\n";
-    cout << cel<< " C = " << f << " F";
-//     return 0;
+//     print of fahrenheit function
+    cout << cel<< " C = " << f << " F\n";
+    
+//     function for the tabuler format
+    chart(c, f);
+    return 0;
 }
-
 
