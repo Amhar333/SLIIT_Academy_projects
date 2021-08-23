@@ -15,6 +15,7 @@ int main()
     return 0;
 }
 
+// function 1
 void drawline()
 {
     int i,j;
@@ -34,7 +35,7 @@ void drawline()
 
 #include <iostream>
 using namespace std;
-
+// function 1
 void drawline(int rows)
 {
     int i, j ;
@@ -49,6 +50,7 @@ void drawline(int rows)
     }
 }
 
+// main function
 int main()
 {
     drawline(3);
@@ -66,8 +68,10 @@ int main()
 #include <iostream>
 using namespace std;
 
+// function 1 decleration
 void drawline(int rows, int columns);
 
+// main function
 int main()
 {
     int rows, columns;
@@ -79,7 +83,7 @@ int main()
     return 0;
 }
 
-
+// function 1 
 void drawline(int rows, int columns)
 {
     int i, j ;
@@ -160,17 +164,23 @@ float rectangleArea(float length, float width)
 #include <iostream>
 using namespace std;
 
+
+// celsius function
 int celsius(float fahrenheit)
 {
     float c = (fahrenheit - 32) * ( 5 / 9.0);
     return c;
 }
+
+// fahtenheite function
 int fahrenheit(float celsius)
 {
     float f = (celsius * 9/5.0) + 32;
     return f;
 }
 
+
+// main functio
 int main()
 {
     float cel, fah, f = 0, c = 0 ;
