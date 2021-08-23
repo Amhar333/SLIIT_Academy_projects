@@ -4,8 +4,11 @@
 #include <iostream>
 using namespace std;
 
+// function 1
 void drawline();
 
+
+// main function 
 int main()
 {
     drawline();
