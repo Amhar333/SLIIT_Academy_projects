@@ -180,7 +180,7 @@ int fahrenheit(float celsius)
 }
 
 
-// main functio
+// main function
 int main()
 {
     float cel, fah, f = 0, c = 0 ;
