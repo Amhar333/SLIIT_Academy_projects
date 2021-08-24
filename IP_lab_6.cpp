@@ -166,14 +166,14 @@ using namespace std;
 
 
 // celsius function
-int celsius(float fahrenheit)
+float celsius(float fahrenheit)
 {
     float c = (fahrenheit - 32) * ( 5 / 9.0);
     return c;
 }
 
 // fahtenheite function
-int fahrenheit(float celsius)
+float fahrenheit(float celsius)
 {
     float f = (celsius * 9/5.0) + 32;
     return f;
@@ -181,13 +181,12 @@ int fahrenheit(float celsius)
 
 
 // tabuler format function - the chart
-int  chart(float a, float b)
+float chart(float a, float b)
 {
-    
     for (a = 0; a <= 100; a++)
     {
         b = (a * 9/5.0) + 32;
-        cout << "\n" << a << " = " << b << "\n" ;
+        cout << "\n" << a << " C = " << b << " F\n" ;
         
     }
 }
@@ -211,7 +210,7 @@ int main()
     cout << cel<< " C = " << f << " F\n";
     
 //     function for the tabuler format
-    chart(c, f);
+    chart(cel, fah);
     return 0;
 }
 
