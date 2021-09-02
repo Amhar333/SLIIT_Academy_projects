@@ -183,11 +183,15 @@ float fahrenheit(float celsius)
 // tabuler format function - the chart
 float chart(float a, float b)
 {
-    for (a = 0; a <= 100; a++)
+    for (c = 0; c <= 100; c++)
+//         if you want to do this while method uncomment the lines- c = 0, while statement, increment of c (c++) 
+//         and comment the for loop  :)
+//     c = 0;
+//     while (c <= 100) 
     {
-        b = (a * 9/5.0) + 32;
-        cout << "\n" << a << " C = " << b << " F\n" ;
-        
+        f = (c * 9/5.0) + 32;
+        cout << "\n" << c << " C = " << f << " F\n" ;
+//         c++;
     }
 }
 
