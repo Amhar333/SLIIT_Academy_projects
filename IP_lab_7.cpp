@@ -97,6 +97,40 @@ int main()
 // -------------------------------------lab7ex3--------------------------------------------------------------
 
 
+// by thecodemonster
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// main function
+int main()
+{
+    int a[15], total = 0;
+    float count = 0;
+    
+    for (int i = 0; i < 15; i++)
+    {
+        cout << "Enter marks : ";
+        cin >> a[i];
+//         sum of the a[] array
+        if (a[i] <= 20 && a[i] >=0)
+        {
+            total = total + a[i];
+            count += 1;
+        }
+        else
+            cout << "Invalid Marks\n";
+    }
+    
+    float avg = total / count ;
+    
+    cout << "Avarage = " << avg;
+    
+    
+    return 0;
+} 
+// main function
 
 
 // -------------------------------------lab7ex4--------------------------------------------------------------
@@ -104,7 +138,10 @@ int main()
 
 
 
+
 // -------------------------------------lab7ex5--------------------------------------------------------------
+
+
 
 
 
