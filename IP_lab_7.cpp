@@ -46,7 +46,53 @@ int main()
 
 // -------------------------------------lab7ex2--------------------------------------------------------------
 
+// by thecodemonster
 
+#include <iostream>
+// #include <cmath>
+using namespace std;
+
+// main function
+int main()
+{
+//     int A[5];
+//     int B[5];
+    int C[5];
+    
+
+    
+    int A[5] = { 10, 20, 30, 40, 50, }; 
+    int B[5] = { 34, 67, 12, 89, 12, }; 
+    
+//     for (int i = 0; i < 5; i++ )
+//     {
+//         cout << "Enter five numbers to arrray - A : ";
+//         cin >> A[i]; 
+//     }
+//     cout << C[i] << endl;
+    
+    
+    
+//     for (int i = 0; i < 5; i++ )
+//     {
+//         cout << "Enter five numbers to arrray - B : ";
+//         cin >> B[i];
+//     }
+    
+    
+    for (int i = 0; i < 5; i++)
+    {
+        C[i] = {(A[i] * B[i])};
+        cout << C[i] << ", ";
+    }
+    
+//     C[i] = {(A[i] * B[i])};
+    
+    
+    
+    return 0;
+} 
+// main function
 
 // -------------------------------------lab7ex3--------------------------------------------------------------
 
