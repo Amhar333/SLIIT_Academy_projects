@@ -136,6 +136,36 @@ int main()
 // -------------------------------------lab7ex4--------------------------------------------------------------
 
 
+// by thecodemonster
+
+#include <iostream>
+using namespace std;
+
+// main function
+int main()
+{
+    int a[9] ;
+    
+    
+    
+    
+//     first for loop coundition is not working....         but, Program is running smoothly..
+    
+    cout << "Element                Value           Histogram\n";
+    for (int i = 0; i < 10; i++)
+    {
+//         cout << "\nEnter how many stars you want to print : ";
+        cin >> a[i];
+        cout << i << "                              " << a[i] << "                " ;
+        for(int j = 0; j < a[i]; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+} 
+// main function
 
 
 
