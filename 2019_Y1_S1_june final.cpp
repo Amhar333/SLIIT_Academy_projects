@@ -84,9 +84,7 @@ float totalProduction(float x1, float x2, float x3)
 // so, we want to call this function 1 time in printChart function
 float getProduction(float a[4], int day)
 {
-	float production_of_that_day;
-	production_of_that_day = a[day - 1];
-	return production_of_that_day;
+	return a[day-1];
 }
 
 // printBar function
@@ -110,15 +108,18 @@ void printBar(float production)
 // this function should print a chart for astrisks(*)
 void printChart(float a[], float b[], float c[],int day)
 {
+	for (; day < 5; day++)
+	{
+		cout << "\nDay "<< day <<"\n";
+		printf("Machine A : ") ;
+		printBar(getProduction(a, day));
 
-	printf("Machine A : ") ;
-	printBar(getProduction(a, day));
+		printf("Machine B : ");
+		printBar(getProduction(b, day));
 
-	printf("Machine B : ");
-	printBar(getProduction(b, day));
-
-	printf("Machine C : ");
-	printBar(getProduction(c, day));
+		printf("Machine C : ");
+		printBar(getProduction(c, day));
+	}
 }
 
 // printReport function 
@@ -180,16 +181,10 @@ int main()
 	cout << endl;
 
 
-	
-	printf("\nEnter a day you want to check the production of Machine A : ");
-	cin >> day;
-
-
 	// answer for Qs-h
 	// in this part contain 
 	// answer for Qs-f, Qs-g
-	cout << "Day "<< day <<"\n";
-	printChart(machine_A, machine_B, machine_C, day);
+	printChart(machine_A, machine_B, machine_C, 1);
 	cout << endl;
 
 	// answer for Qs-i
